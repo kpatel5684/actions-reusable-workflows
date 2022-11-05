@@ -1,0 +1,11 @@
+name: Plan
+
+jobs:
+  test:
+    name: Plan
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - name: Test-PLAN 
+        run: |
+          echo "hello-world"
