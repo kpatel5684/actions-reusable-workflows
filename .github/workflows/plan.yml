@@ -1,5 +1,7 @@
 name: Plan
 
+on: push
+
 jobs:
   test:
     name: Plan
