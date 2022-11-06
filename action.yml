@@ -13,6 +13,4 @@ runs:
     - name: Set Path
       shell: bash
       run: |
-        echo "This is the path: ${dir}"
-      with:
-        dir: ${{ inputs.plan_dir }}
+        echo "This is the path: ${{inputs.plan_dir}}"
