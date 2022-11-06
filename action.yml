@@ -14,3 +14,5 @@ runs:
       shell: bash
       run: |
         echo "This is the path: ${{inputs.plan_dir}}"
+        ls -al
+      working-directory: ${{inputs.plan_dir}}
