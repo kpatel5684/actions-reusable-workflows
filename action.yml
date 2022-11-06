@@ -1,7 +1,18 @@
 name: 'Hello World'
 description: 'Greet someone'
+
+inputs:
+  plan_dir:
+    description: "Path to the location of the plan file"
+    required: true
+
+
 runs:
   using: "composite"
   steps:
-    - run: echo "Hello World"
+    - name: Set Path
       shell: bash
+      run: |
+        echo "This is the path: ${dir}"
+      with:
+        dir: ${{ inputs.plan_dir }}
