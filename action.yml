@@ -18,7 +18,7 @@ runs:
       working-directory: ${{inputs.plan_dir}}
 
     - name: Archive code
-      uses: actions/upload-artifacts@v3
+      uses: actions/upload-artifact@v3
       with:
         name: set1-plan
         path: set1/set1-dir.txt
